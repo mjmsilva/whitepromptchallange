@@ -1,2 +1,2 @@
 # whitepromptchallange
-Sr. BE Engineer take-home challenge
+back-end challenge
