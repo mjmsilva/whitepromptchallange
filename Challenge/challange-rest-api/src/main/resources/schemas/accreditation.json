@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema#",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "accreditation_type": {
+          "type": "string"
+        },
+        "documents": {
+          "type": "array",
+          "items":
+          {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "mime_type": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "name",
+              "mime_type",
+              "content"
+            ]
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "accreditation_type",
+        "documents"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "user_id",
+    "payload"
+  ]
+}
